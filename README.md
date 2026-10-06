@@ -7,7 +7,8 @@ Ros2 package for moving the joints of yahboom robotic arm
 
 The `arm_joints` topic needs to have 6 elements in the effort, velocity and position fields
  
-### The effort field determines if velocity (rad/s) or time is sent to the joints
-* 0 (default) - joint will execute command in a fixed time given in velocity field (s)
-* 1           - joint will execute command using velocity field (rad/s)
+The `effort` field determines if velocity (rad/s) or time is sent to the joints
+* 0 (default) - joint will execute command in a fixed time given in `velocity` field (s)
+* 1           - joint will execute command using `velocity` field (rad/s)
 
+The `position` field should have each joint position in radians. 
